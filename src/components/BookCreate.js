@@ -12,11 +12,12 @@ function BookCreate({onSubmit}){
         setTitle('');
     }
     return (
-        <div>
+        <div className="book-create">
+            <h3>Add a Book</h3>
             <form onSubmit={handleSubmit}>
                 <label>Title</label>
-                <input type="text" onChange={handleChange} value={title}/>
-                <button>Create!</button>
+                <input className="input" type="text" onChange={handleChange} value={title}/>
+                <button className="button">Create!</button>
             </form>
         </div>
     )
